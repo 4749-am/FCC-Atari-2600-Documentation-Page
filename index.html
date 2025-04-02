@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atari 2600 Technical Documentation Page">
+    <title>Atari 2600 Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+        <header class="navbar_header">Atari 2600 Documentation</header>
+        <a class="nav_link" href="#Introduction">Introduction</a>
+        <a class="nav_link" href="#Processors">Processors</a>
+        <a class="nav_link" href="#Graphics_Mode">Graphics Mode</a>
+        <a class="nav_link" href="#RAM">RAM</a>
+        <a class="nav_link" href="#Connectors">Connectors</a>
+        <a class="nav_link" href="https://www.musee-des-jeux-video.com/screenshots/Atari%202600/doc/Manuel%20Atari%202600%20(Europe%20Multi).pdf" target="_blank">User's Manual</a>
+        <a href="#SpaceInvaders">Space Invaders Game Preview</a>
+        <a class="nav_link" href="https://simple.wikipedia.org/wiki/Atari_2600" target="_blank">Atari 2600 Wikipedia Entry</a>
+        <a href="https://atari.com/?srsltid=AfmBOor9Gib6a0Pru0O_Gyvk-EWSxmrZ0z-C8q-WyEnZRmySsE4jXzH4" target="_blank">Atari Website</a>
+    </nav>
+    <main id="main_doc">
+      <h1>Atari 2600</h1>
+      <h2>Technical Specifications</h2>
+      <section id="Introduction" class="main_section">
+        <header>Introduction</header>
+          <p><span>The Atari 2600</span> was based on the MOS Technology 6507 chip, a version of the 6502 with a 13-bit address bus (i.e. 8 kbytes of memory), offering a maximum resolution of 160 × 192 pixels (NTSC), 128 colors, 128 bytes of RAM with 4 kbytes on the cartridges (64 kbytes via bank switching).</p> 
+          <p>The <span>design</span> has undergone numerous transformations and revisions over its 14-year production history, from the original “heavy sixer” to the Atari 2600 Jr at the end.</p>
+          <p>The <span>system</span> also features numerous third-party controllers and peripherals.</p>
+      </section>
+      <section id="Processors" class="main_section">
+        <header>Processors</header>
+          <ul>
+            <li>The <span>CPU</span> is in charge of scribing the screen for each frame, leaving 25% of its time for gaming.</li>
+            <li><span>Main processor:</span> MOS Technology 6507 at 1.19 MHz</li>
+            <li><span>Audio and video processor:</span> Television Interface Adapter (TIA)</li>
+          </ul>
+      </section>
+      <section id="Graphics_Mode" class="main_section">
+        <header>Graphics Mode</header>
+          <ul>
+            <li><span>Memory</span> is not a bitmap, but a 160-pixel wide line.</li>
+            <li><span>Playfield resolution:</span> 40 x 192 pixels (NTSC). Uses a 20-pixel register that is mirrored or copied, from left to right, to reach the 40-pixel width.</li>
+            <li><span>Sprites:</span> 5 moving objects of a single color per line:
+              <ul class="sublist_graphics_mode">
+                <li class="sub_li_players"><span>Two 8 × 192 players</span> (rectangular pixels with a ratio of 1:2, zoomable 2 or 4 times) with a fineness equivalent to 160 × 192 without zoom.</li>
+                <li><span>Two missiles</span> of identical color line by line to their player.</li>
+                <li><span>One ball,</span> line-by-line identical in color to the background color of the playing field.</li>
+              </ul>
+            </li>
+            <li></span>Colors:</span> 128 (16 colors with 8 levels of intensity each) in NTSC and 104 in PAL. The French SÉCAM model displayed only 8 colors; in fact, it recolored the B&W version of the game.</li>
+            <li><span>Sound:</span> 2 channels of 1-bit monaural sound with 4-bit volume control.</li>
+          </ul>
+      </section>
+      <section id="RAM" class="main_section">
+        <header>RAM</header>
+          <ul>
+            <li><span>RAM</span> (within a Mos Technology RIOT chip) : 128 bytes (additional RAM can be included in game cartridges).</li>
+            <li><span> Mass memory</span> (game cartridges) : 2 and 4 Kbytes (but theoretically unlimited expansion via bank switching).</li>
+          </ul>
+      </section>
+      <section id="Connectors" class="main_section">
+        <header>Connectors</header>
+          <ul>
+            <header class="subheader_connectors">Input Connectors (controlled by MOS RIOT) : </header>
+              <li class="sub_li_connectors"><span>Two screwless</span> DE-9 controller ports, for single-button joysticks, paddles, trackballs, driving controllers, 12-key keyboard controllers (0-9, # and *) and third-party controllers with additional functions.</li>
+              <li class="sub_li_connectors"><span>Six switches</span> (original version) : On/Off, TV Signal (B/W or Color), Difficulty for each player (called A and B), Select and Reset. With the exception of the power switch, games could (and did) assign other meanings to the switches. On later models, the difficulty switches were miniaturized and moved to the rear of the unit.</li>
+          </ul>
+          <ul>
+            <header class="subheader_connectors">Output Connectors (B/W or color video TV signal and sound signal sent via an RF output connector) :</header>
+              <li class="sub_li_connectors"><span>B/W or color TV video signal and sound signal</span> sent via RF modulator (NTSC, PAL or SECAM, depending on region; game cartridges are interchangeable between NTSC and PAL/SECAM machines, but this will result in erroneous or missing colors and often a rolling image).</li>
+              <li class="sub_li_connectors"><span>9V DC jack-type power connector</span>, 500 mA (internally converted to 5V DC).</li>
+          </ul>
+      </section>
+      <iframe id="SpaceInvaders" width="560" height="315" src="https://www.youtube.com/embed/m2j4WFwMJ3I?si=CkHOhg70NKxr7z8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+  </body>
+  </html>

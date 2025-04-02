@@ -1,0 +1,110 @@
+:root {
+  --main-color: hsl(0,0%,0%);
+  --white-color: hsl(0,0%,100%);
+}
+
+@media (max-width: 767px) {
+  /* Style à appliquer pour les smartphones */
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Style à appliquer pour les tablettes */
+  body {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-image: url(Atari_2600.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-shadow: 1px 1px 1px var(--white-color);
+  font-family: Inter, sans-serif;
+  font-size: larger;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 180px;
+  border-right: 2px solid var(--main-color);
+}
+
+main {
+  position: absolute;
+  margin-left: 180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+h1,h2 {
+  text-align: center;
+}
+
+header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.subheader_connectors {
+  padding-bottom: 20px;
+}
+
+.navbar_header {
+  border-bottom: 2px solid var(--main-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  border-bottom: 2px solid;
+  padding: 20px 5px 20px 10px;
+  font-weight: bold;
+  font-size: 16px;
+  }
+
+p {
+  text-align: justify;
+}
+
+span {
+  font-weight: bold;
+}
+
+ul li {
+  padding-bottom: 10px;
+}
+
+.sub_li_connectors {
+  padding-left: 45px;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.sublist_graphics_mode {
+  list-style: none;
+}
+
+.sub_li_players {
+  padding-top: 15px;
+}
+
+iframe {
+  border: 2px solid var(--white-color);
+  position: relative;
+  left: 400px;
+  bottom: 10px;
+}
