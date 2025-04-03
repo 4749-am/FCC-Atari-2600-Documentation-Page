@@ -80,7 +80,8 @@ p {
 }
 
 span {
-  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 ul li {
